@@ -19,7 +19,7 @@ theme.bg_urgent     = "#000000" --idk
 theme.bg_minimize   = "#000000" --idk
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#4169E1" --normal font in menus
+theme.fg_normal     = "#6495ED" --normal font in menus
 theme.fg_focus      = "#000000" --focus font in menus
 theme.fg_urgent     = "#000000" --idk
 theme.fg_minimize   = "#000000" --idk
