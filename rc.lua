@@ -48,7 +48,8 @@ end
 beautiful.init(gears.filesystem.get_configuration_dir() .. "mytheme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "alacritty"
+browser = "brave-browser"
+terminal = "tilda"
 editor = os.getenv("EDITOR") or "nvim"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -275,6 +276,8 @@ globalkeys = gears.table.join(
         {description = "go back", group = "client"}),
 
     -- Standard program
+    awful.key({ modkey,           }, "b", function () awful.spawn(browser) end,
+              {description = "open browser", group = "browser"}),
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
               {description = "open a terminal", group = "launcher"}),
     awful.key({ modkey, "Control" }, "r", awesome.restart,
@@ -575,8 +578,9 @@ beautiful.useless_gap = 10
 awful.spawn.with_shell("nitrogen --restore") 
 awful.spawn.with_shell("picom")
 
-client.connect_signal("manage", function (c)
+-- rounded shape
+--[[client.connect_signal("manage", function (c)
     c.shape = function(cr,w,h)
         gears.shape.rounded_rect(cr,w,h,10)
     end
-end)
+end)]]--
