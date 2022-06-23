@@ -11,15 +11,15 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font          = "sans 8"
+theme.font          = "RobotoMono 8"
 
-theme.bg_normal     = "#17202A" --normal background
-theme.bg_focus      = "#4169E1" --focus background
+theme.bg_normal     = "#1a1b26" --normal background
+theme.bg_focus      = "#7aa2f7" --focus background
 theme.bg_urgent     = "#000000" --idk
 theme.bg_minimize   = "#000000" --idk
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#6495ED" --normal font in menus
+theme.fg_normal     = "#7aa2f7" --normal font in menus
 theme.fg_focus      = "#000000" --focus font in menus
 theme.fg_urgent     = "#000000" --idk
 theme.fg_minimize   = "#000000" --idk
@@ -27,7 +27,7 @@ theme.fg_minimize   = "#000000" --idk
 theme.useless_gap   = dpi(15)
 theme.border_width  = dpi(1)
 theme.border_normal = "#000000" --border normal
-theme.border_focus  = "#000000" --border focus
+theme.border_focus  = "#bb9af7" --border focus
 theme.border_marked = "#000000" --idk
 
 -- There are other variable sets
@@ -61,7 +61,7 @@ theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
 -- Variables set for theming the menu:
 -- menu_[bg|fg]_[normal|focus]
 -- menu_[border_color|border_width]
-theme.menu_submenu_icon = themes_path.."default/submenu.png"
+theme.menu_submenu_icon = themes_path.."~/Pictures/Wallpaper/mytheme_wallpaper2.jpg"
 theme.menu_height = dpi(15)
 theme.menu_width  = dpi(100)
 
@@ -71,7 +71,7 @@ theme.menu_width  = dpi(100)
 --theme.bg_widget = "#cc0000"
 
 -- Define the image to load
-theme.titlebar_close_button_normal = themes_path.."default/titlebar/close_normal.png"
+--[[theme.titlebar_close_button_normal = themes_path.."default/titlebar/close_normal.png"
 theme.titlebar_close_button_focus  = themes_path.."default/titlebar/close_focus.png"
 
 theme.titlebar_minimize_button_normal = themes_path.."default/titlebar/minimize_normal.png"
@@ -95,9 +95,9 @@ theme.titlebar_floating_button_focus_active  = themes_path.."default/titlebar/fl
 theme.titlebar_maximized_button_normal_inactive = themes_path.."default/titlebar/maximized_normal_inactive.png"
 theme.titlebar_maximized_button_focus_inactive  = themes_path.."default/titlebar/maximized_focus_inactive.png"
 theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
-theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
+theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"]]--
 
-theme.wallpaper = themes_path.."default/background.png"
+theme.wallpaper = themes_path.."~/Pictures/Wallpaper/mytheme_wallpaper1.jpg"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"
